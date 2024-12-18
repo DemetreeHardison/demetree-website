@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demetree's Real Estate Page</title>
+    <style>
+        /* Set the entire page background to an image */
+        body {
+            background-image: url('pics/homebackground for website.jpg'); /* Replace with your image file path */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Layout for content */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .intro img {
+            max-width: 20%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .about-summary {
+            max-width: 800px;
+            flex: 1;
+            text-align: left; 
+        }
+
+        .center-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .center-button-container button {
+            background-color: #32CD32;
+            color: #fff;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .contact-form, .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background-color: #32CD32;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-info p {
+            color: #fff;
+        }
+
+        /* Header Logo */
+        .header-logo {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .header-logo img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        /* Footer Logo */
+        .footer-logo {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .footer-logo img {
+            width: 75px;
+            height: auto;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .intro img {
+                max-width: 60%;
+                margin: 0;
+            }
+
+            .about-summary {
+                max-width: 80%;
+            }
+
+            .header-logo {
+                justify-content: right;
+            }
+
+            .center-button-container button {
+                font-size: 18px;
+                padding: 12px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+            }
+
+            .center-button-container button {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+
+            .contact-form input, .contact-form textarea {
+                padding: 10px;
+            }
+
+            .header-logo img {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section for Logo -->
+    <div class="header-logo">
+        <img src="pics/William Davis Logo_full.jpeg" alt="Williams Logo">
+    </div>
+
+    <div class="container">
+        <!-- Intro Section with Image and About Summary -->
+        <div class="intro">
+            <img src="pics/mom pic.JPG" alt="Your chosen image"> <!-- Replace 'your-image.jpg' with your image file path -->
+            <div class="about-summary">
+                <h2>About Me</h2>
+                <p>Hello. I’m Demetree, a native-born Texan, raised in the North Dallas area. In my spare time, I enjoy my family, sports and listening to music. I hold a bachelor’s degree in Economics, and a master’s degree in Business and Human Relations. I spent over 20 years in corporate America holding roles in customer service, finance and sales. I have always had a passion for real estate and decided to pursue it over 20 years ago. With the positions I held in corporate, I have been able to use those skillsets in my real estate business by serving my clients in the most efficient and professional manner.</p>
+
+                <p>Buying or selling a home can be a stressful experience. My goal is to be the best advocate for my clients and always have their best interests at heart. Choosing the right realtor can make that experience easier and smoother. Knowing the market and processes are key to a successful transaction. Whether you are ready to buy or sell now or in the future, choose me and I will walk with you every step of the way. Please leave your contact information. I would love to hear from you.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Centered "Search for Homes" Button -->
+    <div class="center-button-container">
+        <button onclick="window.open('https://www.mywdr.com/', '_blank')">Search for Homes</button>
+    </div>
+
+    <div class="container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Contact Me</h3>
+            <form action="https://formspree.io/f/mvgoqlbk" method="POST">
+                <input type="text" name="first-name" placeholder="First Name" required>
+                <input type="text" name="last-name" placeholder="Last Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: djrealtor@yahoo.com</p>
+            <p>Fax: (972) 499-7711</p>
+            <p>Phone: (214) 236-2962</p>
+            <p>Address: 17732 Preston Road, Suite 100, Dallas, TX 75252</p>
+        </div>
+
+        <div class="footer-logo">
+            <img src="pics/realtor logo.JPG" alt="Realtor logo">
+        </div>
+    </div>
+</body>
+</html>
