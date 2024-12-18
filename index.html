@@ -21,6 +21,14 @@
             background-attachment: fixed;
         }
 
+        /* Layout for content */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
         .intro {
             display: flex;
             flex-wrap: wrap;
@@ -29,7 +37,7 @@
         }
 
         .intro img {
-            max-width: 50%;
+            max-width: 20%;
             height: auto;
             border-radius: 10px;
             margin-top: 20px;
@@ -37,6 +45,8 @@
 
         .about-summary {
             max-width: 800px;
+            flex: 1;
+            text-align: left; 
         }
 
         .center-button-container {
@@ -101,16 +111,26 @@
             height: auto;
         }
 
+        /* Footer Logo */
+        .footer-logo {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .footer-logo img {
+            width: 75px;
+            height: auto;
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
             .intro {
-                flex-direction: column;
                 align-items: center;
                 text-align: center;
             }
 
             .intro img {
-                max-width: 100%;
+                max-width: 40%;
                 margin: 0;
             }
 
@@ -119,7 +139,7 @@
             }
 
             .header-logo {
-                justify-content: center;
+                justify-content: right;
             }
 
             .center-button-container button {
@@ -195,8 +215,8 @@
             <p>Address: 17732 Preston Road, Suite 100, Dallas, TX 75252</p>
         </div>
 
-        <div>
-            <img src="pics/realtor logo.JPG" alt="Realtor logo" style="width: 75px; height: auto; margin-top: 5px;>
+        <div class="footer-logo">
+            <img src="pics/realtor logo.JPG" alt="Realtor logo">
         </div>
     </div>
 </body>
